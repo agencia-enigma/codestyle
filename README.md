@@ -47,7 +47,6 @@ When realeasing a new version, write a commit message in the following format "R
 
 ### HTML
 Always use soft tabs with two spaces. It's highly recommended you set your editor to show invisible characters to avoid skip this.
-
 ```html
 <!-- Bad -->
 <div>
@@ -88,3 +87,33 @@ Do not include `/` to [Void Elements](https://www.w3.org/TR/html51/syntax.html#w
 <input name="name">
 ```
 
+Separate block elements with a single blank line and group children inner blocks.
+```html
+<!-- Bad -->
+<div>
+
+  <ul>
+    
+    <li>...</li>
+    
+    <li>...</li>
+    
+  </ul>
+  
+</div>
+<div>
+  ...
+</div>
+
+<!-- Good -->
+<div>
+  <ul>
+    <li>...</li>
+    <li>...</li>
+  </ul>
+</div>
+
+<div>
+  ...
+</div>
+```
