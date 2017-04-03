@@ -46,9 +46,6 @@ When realeasing a new version, write a commit message in the following format "R
 > Why: Makes it easier to track version releases in git history. For example, you could run git log --pretty=format:"%H %s" | grep 'Release' to fetch only version bump commits.
 
 ### HTML
-Follow this when writing any piece of HTML.
-
-#### HTML Indent
 Always use soft tabs with two spaces. It's highly recommended you set your editor to show invisible characters to avoid skip this.
 
 ```html
@@ -71,5 +68,23 @@ Always use soft tabs with two spaces. It's highly recommended you set your edito
     <li>Item 1</li>
   </ul>
 </div>
+```
+
+Always use double quotes. Never single ones.
+```html
+<!-- Bad -->
+<div class='container'></div>
+
+<!-- Good -->
+<div class="container"></div>
+```
+
+Do not include `/` to [Void Elements](https://www.w3.org/TR/html51/syntax.html#writing-html-documents-elements).
+```html
+<!-- Bad -->
+<input name="name" />
+
+<!-- Good -->
+<input name="name">
 ```
 
