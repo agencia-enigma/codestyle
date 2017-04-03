@@ -117,3 +117,18 @@ Separate block elements with a single blank line and group children inner blocks
   ...
 </div>
 ```
+
+When writing any element, you should follow this attributes order for fast reading:
+
+1. `class`
+2. `id`, `name`
+3. `data-*`
+4. `src`, `for`, `type`, `href`
+5. `alt`, `title`
+6. `aria-*`, `role`
+5. `alt`, `title`
+
+```html
+<!-- Good -->
+<input class="field" name="name" data-format="name" type="text" placeholder="Lorem ipsum" aria-label="Dolor sit amet">
+```
