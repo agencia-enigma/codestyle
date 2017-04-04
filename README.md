@@ -132,3 +132,27 @@ When writing any element, you should follow this attributes order for fast readi
 <!-- Good -->
 <input class="field" name="name" data-format="name" type="text" placeholder="Lorem ipsum" aria-label="Dolor sit amet">
 ```
+
+You don't need to specify `type` when including CSS or JS files on your document, and always keep `rel` attribute at the end of the tag.
+
+```html
+<!-- Bad -->
+<link rel="stylesheet" href="assets/css/style.css" type="text/css">
+<script src="scripts.min.js" type="text/javascript"></script>
+
+<!-- Good -->
+<link href="assets/css/style.css" rel="stylesheet">
+<script src="scripts.min.js"></script>
+```
+
+For better performance, always call your javascripts file before the closing `<body>`:
+
+```html
+<!-- Bad -->
+<link rel="stylesheet" href="assets/css/style.css" type="text/css">
+<script src="scripts.min.js" type="text/javascript"></script>
+
+<!-- Good -->
+<link href="assets/css/style.css" rel="stylesheet">
+<script src="scripts.min.js"></script>
+```
