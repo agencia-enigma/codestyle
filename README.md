@@ -1,7 +1,7 @@
 # Enigma's codestyle
 These are brief guidelines to follow when you are writing or contributing on any Enigma's projects, to keep our sanity and to grow a concise and reliable legacy code. Enjoy it!
 
-## Index
+# Index
 
 - [Commits]()
 - [HTML]()
